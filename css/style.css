@@ -1,0 +1,61 @@
+html{
+    background-image: url("https://www.chimerarevo.com/wp-content/uploads/2020/06/Sfondi-4K-PC.jpg");
+}
+body {
+    margin: 0;
+    font-family: "Raleway",sans-serif;
+}
+h1 {
+    margin: 0;
+    font-size: 33px;
+    color: rgb(0, 0, 0);
+    padding: 0 10%;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    
+}
+
+h3{
+    margin-top: 5px;
+    font-size: 20px;
+
+}
+.img-container{
+    text-align: center;
+    margin-top: 25px;
+}
+#cover{
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+}
+
+.titolo{
+    margin-left: 70px;
+}
+.container {
+    text-align: left;
+    display: block;
+    width: 600px;
+    height: 750px;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.bottoni{
+    text-align: center;
+    margin-top: 90px;
+    border-radius: 20px;
+    justify-content: space-between;
+  
+    
+}
