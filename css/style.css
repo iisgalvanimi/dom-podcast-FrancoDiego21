@@ -12,6 +12,11 @@ h1 {
     padding: 0 10%;
     text-align: center;
 }
+h2{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
 
 h4 {
     margin-top: 5px;
@@ -30,7 +35,7 @@ h3{
     text-align: center;
     margin-top: 25px;
 }
-#cover{
+#immagine{
     border-radius: 20px;
     width: 500px;
     height: 400px;
@@ -43,7 +48,7 @@ h3{
     text-align: left;
     display: block;
     width: 600px;
-    height: 750px;
+    height: 700px;
     margin: auto;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.795);
@@ -53,7 +58,7 @@ h3{
 
 .bottoni{
     text-align: center;
-    margin-top: 90px;
+    margin-top: 70px;
     border-radius: 20px;
     justify-content: space-between;
   

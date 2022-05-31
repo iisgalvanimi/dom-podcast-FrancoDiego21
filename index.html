@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/script.js"></script>
-    <title>Podcast</title>
+    <title>Podcast Player</title>
+    <script defer  src="js/script.js"></script>
 </head>
 <body>
     <h1>Sputofy</h1>
-    <div class="contain">
-        <div class = "container">
-            <div class = "cover">
-                <div class="img-container">
-                    <img src="images/Alan Walker.jpg" alt="foto cantante" id="cover" />
-                </div>   
-            </div>
+    
+    <div class="container" id = "container">
+        <h2><a href = "lista.html">lista canzoni</a></h2>
 
-            <div class="titolo">
-                <h3 id = "canzone">Faded</h3>
-                <h4 id = "cantante">Alan Walker</h4>
-            </div>
-
-            <audio src="songs/Alan Walker - Faded.mp3" id="audio"></audio>
-        
-        
-            <div class="bottoni">
-                <button id = "indietro">Indietro</button>
-                <button id = "play">Play</button>
-                <button id = "avanti">Avanti</button>
-            </div>
-
+        <div class = "cover">
+            <div class="img-container">
+                <img src="images/Faded.jpg" alt="foto cantante" id="immagine" />
+            </div>   
         </div>
+        <audio src="songs/Faded.mp3" id="audio"></audio>
+
+        <div class="titolo">
+            <h3 id = "canzone">Faded</h3>
+            <h4 id = "cantante">Alan Walker</h4>
+        </div>
+
+       
+        
+        
+        <div class="bottoni">
+            <button id = "indietro">Indietro</button>
+            <button id = "play">Play</button>
+            <button id = "avanti">Avanti</button>
+        </div>
+
+    
     </div>
         
 

@@ -1,36 +1,36 @@
-const container = document.getElementById('contain');
+
+const musicContainer = document.getElementById('container');
 const Btn_play = document.getElementById('play')
 const Btn_indietro = document.getElementById('indietro').addEventListener('click', canzoneInd);
 const Btn_avanti = document.getElementById('avanti').addEventListener('click', canzoneAvanti);
 const canzone = document.getElementById('canzone');
 const cantante = document.getElementById('cantante');
 const audio = document.getElementById('audio').addEventListener('ended', canzoneAvanti);
-const cover = document.getElementById('cover');
+const cover = document.getElementById('immagine');
 
-const songs = ['Faded', 'Smack that', 'Toxic'];
-const singers = ['Alan Walker', 'Akon ft Eminem', 'BoyWithUke'];
+const songs = ['Faded','Smack that','Toxic'];
+const singers = ['Alan Walker','Akon ft Eminem','BoyWithUke'];
 
-let i = 2;
+let i = 0;
 
+loadSong(songs[i]);
 
-loadSong(songs[i], singers[i]);
-
-function loadSong(song, singer){
+function loadSong(song){
     canzone.innerText = song;
-    cantante.innerText = singer;
-    audio.src = `songs/${song}.mp3`;
-    cover.src = `images/${singer}.jpg`
+    cantante.innerText = singers[i];
+    cover.src = `images/${song}.jpg`;
+    audio.src = `music/${song}.mp3`;
+   
 
 }
 
 function playS(){
-  container.classList.add('play')  
+  musicContainer.classList.add('play');  
   audio.play();  
 }
 
 function pauseS(){
-    container.classList.remove('play');
-    ok = 'pause'
+    musicContainer.classList.remove('play');
     audio.pause();
 }
 
@@ -41,7 +41,7 @@ function canzoneInd(){
         i = songs.length - 1; 
     }
 
-    loadSong(songs[i], singers[i]);
+    loadSong(songs[i]);
     playS();
 
 }
@@ -53,15 +53,15 @@ function canzoneAvanti(){
         i = 0; 
     }
 
-    loadSong(songs[i], singers[i]);
+    loadSong(songs[i]);
     playS();
 
 }
 
 Btn_play.addEventListener('click', () => {
-    const ok = container.classList.contains('play');
+    const isPlaying = musicContainer.classList.contains('play');
 
-    if (ok){
+    if (isPlaying){
         pauseS();
     }else{
         playS();
