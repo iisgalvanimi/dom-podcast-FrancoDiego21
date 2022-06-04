@@ -5,7 +5,8 @@ const Btn_indietro = document.getElementById('indietro').addEventListener('click
 const Btn_avanti = document.getElementById('avanti').addEventListener('click', canzoneAvanti);
 const canzone = document.getElementById('canzone');
 const cantante = document.getElementById('cantante');
-const audio = document.getElementById('audio').addEventListener('ended', canzoneAvanti);
+const audio = document.getElementById('audio');
+audio.addEventListener('ended', canzoneAvanti);
 const cover = document.getElementById('immagine');
 
 const songs = ['Faded','Smack that','Toxic'];
